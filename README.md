@@ -1,6 +1,6 @@
 # Sms
 
-VB6 working copy of `Sms` from Dave Robinson's OneDrive Historical Dev `VB/Old` folder. Project title: CreateDDR. Contains 12 project files.
+VB6 Systems Management Server toolkit bag: helpers for AD discovery, boundaries, DDR creation, service accounts, disk space, host type/time, ping, client-service restart, and SINV watch. Open any of the nested `.vbp` files (e.g. `ADDiscovery/ADDiscovery.vbp`) in the VB6 IDE.
 
 **Source last updated:** 2026-08-27 · **Language:** VB6 · **Target:** VB6 Win32 · **Output:** WinForms exe
 
@@ -10,47 +10,15 @@ _Note: original OneDrive LastWriteTime values were wiped to 2026-08-27 by a zip 
 
 | Project | Language | Type | Purpose |
 |---------|----------|------|---------|
-| `CreateDDR` (`CreateDDR/CreateDDR.vbp`) | VB6 | WinForms exe | CreateDDR |
-| `PingServers` (`PingServers/PingServers.vbp`) | VB6 | WinForms exe | PingServers |
-| `HostType` (`Hosttype/Hosttype.vbp`) | VB6 | WinForms exe | Hosttype |
-| `WMIDiskSpace` (`Diskspace/DiskSpace.vbp`) | VB6 | WinForms exe | DiskSpace |
-| `PingHosts` (`PingHosts/PingHosts.vbp`) | VB6 | WinForms exe | Project1 |
-| `RestartClientService` (`Restart Client Service/RestartClientService.vbp`) | VB6 | WinForms exe | RestartClientService |
-| `ADDiscovery` (`ADDiscovery/ADDiscovery.vbp`) | VB6 | WinForms exe | ADDiscovery |
-| `Project1` (`Sinv Watcher/Sinv Watcher.vbp`) | VB6 | WinForms exe | Project1 |
-| `GetHostsType` (`GetHostsType/GetHostsType.vbp`) | VB6 | WinForms exe | Project1 |
-| `Project1` (`Boundaries/Project1.vbp`) | VB6 | WinForms exe | Project1 |
-| `CreateServiceAccounts` (`CreateServiceAccounts/CreateServiceAccounts.vbp`) | VB6 | WinForms exe | CreateServiceAccounts |
-| `HostType` (`Hosttime/Hosttime.vbp`) | VB6 | WinForms exe | Hosttime |
-
-## How to open
-
-Open the `.vbp` in Visual Basic 6.0 IDE:
-- `CreateDDR/CreateDDR.vbp`
-- `PingServers/PingServers.vbp`
-- `Hosttype/Hosttype.vbp`
-- `Diskspace/DiskSpace.vbp`
-- `PingHosts/PingHosts.vbp`
-- `Restart Client Service/RestartClientService.vbp`
-- `ADDiscovery/ADDiscovery.vbp`
-- `Sinv Watcher/Sinv Watcher.vbp`
-- `GetHostsType/GetHostsType.vbp`
-- `Boundaries/Project1.vbp`
-- `CreateServiceAccounts/CreateServiceAccounts.vbp`
-- `Hosttime/Hosttime.vbp`
-
-## Requirements
-
-- Visual Basic 6.0 IDE
-- Registered OCX/DLL dependencies referenced by the `.vbp` (may need to be installed separately):
-  - `DRPing.ocx`
-  - `Mscomctl.ocx`
-
-## Attribution and provenance
-
-Working copy from Dave Robinson's OneDrive Historical Dev folder `VB/Old/Sms`.
-Company names in project files: CSC.
-
-## License
-
-MIT © 2026 VaderConsulting for Dave Robinson's code. See `LICENSE`.
+| `ADDiscovery` (`ADDiscovery/ADDiscovery.vbp`) | VB6 | WinForms exe | AD/SMS site server discovery |
+| `Project1` (`Boundaries/Project1.vbp`) | VB6 | WinForms exe | SMS boundaries helper |
+| `CreateDDR` (`CreateDDR/CreateDDR.vbp`) | VB6 | WinForms exe | Create SMS DDR records |
+| `CreateServiceAccounts` (`CreateServiceAccounts/CreateServiceAccounts.vbp`) | VB6 | WinForms exe | Create SMS service accounts |
+| `WMIDiskSpace` (`Diskspace/DiskSpace.vbp`) | VB6 | WinForms exe | WMI disk space check |
+| `GetHostsType` (`GetHostsType/GetHostsType.vbp`) | VB6 | WinForms exe | Host type probe |
+| `Hosttime` (`Hosttime/Hosttime.vbp`) | VB6 | WinForms exe | Remote host time |
+| `HostType` (`Hosttype/Hosttype.vbp`) | VB6 | WinForms exe | Host type classifier |
+| `PingHosts` (`PingHosts/PingHosts.vbp`) | VB6 | WinForms exe | Ping host list |
+| `PingServers` (`PingServers/PingServers.vbp`) | VB6 | WinForms exe | Ping SMS servers |
+| `RestartClientService` (`Restart Client Service/RestartClientService.vbp`) | VB6 | WinForms exe | Restart SMS client service |
+| `SinvWatcher` (`Sinv Watcher/Sinv Watcher.vbp`) | VB6 | WinForms exe | Software inventory watcher |
