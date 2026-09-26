@@ -22,3 +22,24 @@ _Note: original OneDrive LastWriteTime values were wiped to 2026-08-27 by a zip 
 | `PingServers` (`PingServers/PingServers.vbp`) | VB6 | WinForms exe | Ping SMS servers |
 | `RestartClientService` (`Restart Client Service/RestartClientService.vbp`) | VB6 | WinForms exe | Restart SMS client service |
 | `SinvWatcher` (`Sinv Watcher/Sinv Watcher.vbp`) | VB6 | WinForms exe | Software inventory watcher |
+
+## How to open
+
+Open any nested `.vbp` in Visual Basic 6.0 IDE, for example:
+- `ADDiscovery/ADDiscovery.vbp`
+- `Boundaries/Project1.vbp`
+- `CreateDDR/CreateDDR.vbp`
+- `Sinv Watcher/Sinv Watcher.vbp`
+
+## Requirements
+
+- Visual Basic 6.0 IDE
+- ADO / OLE DB and WMI access as used by the individual helpers
+
+## Attribution and provenance
+
+Working copy from my Historical Dev folder `VB/Old/Sms`.
+
+## License
+
+MIT © 2026 VaderConsulting for Dave Robinson's code. See `LICENSE`.
